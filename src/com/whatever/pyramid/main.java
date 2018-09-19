@@ -1,3 +1,5 @@
+package com.whatever.pyramid;
+
 import java.util.Scanner;
 public class main {
     private static Scanner inputReader = new Scanner(System.in);
