@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="java-tutorial-pyramid:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_tutorial_pyramid_jar</output-path>
+    <root id="archive" name="java-tutorial-pyramid.jar">
+      <element id="module-output" name="java-tutorial-pyramid" />
+    </root>
+  </artifact>
+</component>
