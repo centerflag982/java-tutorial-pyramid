@@ -4,15 +4,17 @@ package com.whatever.pyramid;
 public class Main {
 
     public static void main(String [ ] args) {
-        UserInput userInput = new UserInput();
-        DrawingContext drawingContext;
-        OutputStrategy outputStrategy;
+        PyramidBuilder pyramidBuilder = new PyramidBuilder();
+        DrawingSelector drawingSelector;
+        OutputType outputType;
         int inputRows;
+        String pyramidString;
 
-        inputRows = userInput.getInputRows();
-        outputStrategy = userInput.getOutputType();
-        drawingContext = new DrawingContext(outputStrategy);
-
-        drawingContext.executeStrategy(inputRows);
+        inputRows = pyramidBuilder.getInputRows();
+        outputType = pyramidBuilder.getOutputType();
+        pyramidString = pyramidBuilder.buildPyramidString(inputRows);
+        //drawingSelector = new DrawingSelector(outputType);
+        //drawingSelector.sendToDrawer(pyramidString);
+        pyramidBuilder.sendToDrawer(outputType, pyramidString);
     }
 }
