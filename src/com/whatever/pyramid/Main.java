@@ -4,8 +4,16 @@ package com.whatever.pyramid;
 public class Main {
 
     public static void main(String [ ] args) {
-        PyramidBuilder pyramidBuilder = new PyramidBuilder();
-        DrawingSelector drawingSelector;
+        Main runInstance = new Main(PyramidBuilder.getInstance());
+    }
+
+    private PyramidBuilder pyramidBuilder;
+
+    public Main(PyramidBuilder pyramidBuilder) {
+        this.pyramidBuilder = pyramidBuilder;
+    }
+
+    public void run() {
         OutputType outputType;
         int inputRows;
         String pyramidString;
@@ -13,8 +21,6 @@ public class Main {
         inputRows = pyramidBuilder.getInputRows();
         outputType = pyramidBuilder.getOutputType();
         pyramidString = pyramidBuilder.buildPyramidString(inputRows);
-        //drawingSelector = new DrawingSelector(outputType);
-        //drawingSelector.sendToDrawer(pyramidString);
         pyramidBuilder.sendToDrawer(outputType, pyramidString);
     }
 }

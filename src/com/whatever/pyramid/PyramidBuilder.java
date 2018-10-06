@@ -7,6 +7,18 @@ import java.util.Scanner;
 
 class PyramidBuilder {
 
+    //---------Singleton implementation----------
+    private PyramidBuilder() {}
+
+    private static PyramidBuilder pyramidBuilder;
+    static PyramidBuilder getInstance() {
+        if (pyramidBuilder == null){
+            pyramidBuilder = new PyramidBuilder();
+        }
+        return pyramidBuilder;
+    }
+    //-------------------------------------------
+
     private Scanner inputReader = new Scanner(System.in);
 
     int getInputRows(){
