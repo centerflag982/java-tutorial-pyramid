@@ -1,4 +1,4 @@
-package com.whatever.pyramid;
+package com.centerflag982.launchcode.pyramid;
 
 
 public class Main {

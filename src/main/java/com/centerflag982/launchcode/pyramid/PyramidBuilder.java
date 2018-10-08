@@ -1,7 +1,7 @@
-package com.whatever.pyramid;
+package com.centerflag982.launchcode.pyramid;
 
-import com.whatever.pyramid.pyramidDrawers.DrawPyramidConsole;
-import com.whatever.pyramid.pyramidDrawers.DrawPyramidFile;
+import com.centerflag982.launchcode.pyramid.pyramidDrawers.DrawPyramidConsole;
+import com.centerflag982.launchcode.pyramid.pyramidDrawers.DrawPyramidFile;
 
 import java.util.Scanner;
 

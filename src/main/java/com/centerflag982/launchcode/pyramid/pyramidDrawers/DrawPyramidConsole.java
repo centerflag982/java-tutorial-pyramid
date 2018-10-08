@@ -1,6 +1,6 @@
-package com.whatever.pyramid.pyramidDrawers;
+package com.centerflag982.launchcode.pyramid.pyramidDrawers;
 
-import com.whatever.pyramid.OutputType;
+import com.centerflag982.launchcode.pyramid.OutputType;
 
 public class DrawPyramidConsole implements OutputType {
     public void drawPyramid(String pyramidString){

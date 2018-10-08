@@ -1,6 +1,6 @@
-package com.whatever.pyramid.pyramidDrawers;
+package com.centerflag982.launchcode.pyramid.pyramidDrawers;
 
-import com.whatever.pyramid.OutputType;
+import com.centerflag982.launchcode.pyramid.OutputType;
 
 import java.io.IOException;
 import java.io.PrintWriter;
